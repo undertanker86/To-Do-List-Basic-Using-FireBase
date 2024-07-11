@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="todo-app">
+    <h1 class="todo-app__title">Todo List</h1>
+
+    <form id="todo-app-create" class="todo-app__create">
+      <input type="text" name="content" placeholder="Enter your to do.....">
+      <button type="submit">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </form>
+  
+    <div id="todo-app-list" class="todo-app__list"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

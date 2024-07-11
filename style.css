@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .todo-app {
+    border: 1px solid #ddd;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background: #f6f6f6;
+    font-family: "Roboto";
+    padding: 30px;
+  }
+  
+  .todo-app__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    color: orange;
+  }
+  
+  .todo-app__create {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-app__create input {
+    flex: 1;
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: 0;
+  }
+  
+  .todo-app__create button {
+    font-size: 20px;
+    border: 0;
+    background: orange;
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .todo-app__item {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .todo-app__item-content {
+    flex: 1;
+  }
+  
+  .todo-app__item-button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .todo-app__item-button--edit {
+    background: #ffc400;
+  }
+  
+  .todo-app__item-button--complete {
+    background: #60c700;
+  }
+  
+  .todo-app__item-button--delete {
+    background: #c70000;
+    color: #fff;
+  }
+  
+  .todo-app__item--completed {
+    background: #d5ffc3;
+    border-color: green;
+  }
+  
+  .todo-app__item--completed .todo-app__item-content {
+    text-decoration: line-through;
+  }
+  
+  .todo-app__item--completed .todo-app__item-button--edit {
+    display: none;
+  }
+  
+  .todo-app__item--completed .todo-app__item-button--complete {
+    display: none;
+  }
